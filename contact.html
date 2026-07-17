@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — PILLAR</title>
+<meta name="description" content="Tell us what your business is built on. One conversation is usually enough to find the pillar.">
+<link rel="canonical" href="https://example.com/contact.html">
+<meta name="theme-color" content="#E6E5E0">
+<meta property="og:title" content="Contact — PILLAR">
+<meta property="og:description" content="Tell us what your business is built on.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="nav__in">
+    <a class="brand" href="index.html" aria-label="PILLAR — home">
+      <svg class="brand__reg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/>
+        <line x1="12" y1="0" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="24"/>
+        <line x1="0" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="24" y2="12"/>
+      </svg>
+      <span data-brand>PILLAR</span>
+    </a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="navlinks" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navlinks" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section" style="padding-bottom:var(--s-6)">
+    <div class="wrap">
+      <p class="plate-code"><b>Index</b> — Contact</p>
+      <div class="reg" style="max-width:16ch">
+        <h1 class="headline reg__plate reg__plate--c" aria-hidden="true">Say it once</h1>
+        <h1 class="headline reg__plate reg__plate--m" aria-hidden="true">Say it once</h1>
+        <h1 class="headline reg__plate reg__plate--y" aria-hidden="true">Say it once</h1>
+        <h1 class="headline reg__ink">Say it once</h1>
+      </div>
+      <p class="lede" style="margin-top:var(--s-6)">
+        Tell us what your business is, and what you think you're good at. If those two
+        things don't line up, that's exactly the conversation worth having.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <hr class="rule" style="margin-bottom:var(--s-7)">
+      <div class="split" style="grid-template-columns:1.15fr 0.85fr">
+
+        <!-- Form -->
+        <div>
+          <p class="plate-code"><b>01</b> — Send a brief</p>
+          <div class="formstat" role="status" aria-live="polite"></div>
+          <form class="form" novalidate style="margin-top:var(--s-4)">
+            <div class="row2">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text" required autocomplete="name">
+                <span class="field__err">Add your name so we know who we're replying to.</span>
+              </div>
+              <div class="field">
+                <label for="business">Business name</label>
+                <input id="business" name="business" type="text" autocomplete="organization">
+              </div>
+            </div>
+
+            <div class="row2">
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required autocomplete="email">
+                <span class="field__err">That email doesn't look right — check it and try again.</span>
+              </div>
+              <div class="field">
+                <label for="need">What you need</label>
+                <select id="need" name="need">
+                  <option>Not sure yet — help me work it out</option>
+                  <option>Video</option>
+                  <option>Posters &amp; pictures</option>
+                  <option>Both</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="pillar">What is your business built on?</label>
+              <textarea id="pillar" name="pillar" required
+                placeholder="One or two sentences. What do people actually come to you for — not what you sell, but why they choose you over the place next door."></textarea>
+              <span class="field__err">This is the important one. Even a rough answer helps.</span>
+            </div>
+
+            <!-- Honeypot: bots fill it, humans never see it -->
+            <div style="position:absolute;left:-9999px" aria-hidden="true">
+              <label for="website">Website</label>
+              <input id="website" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div>
+              <button class="btn" type="submit">Send brief <span class="arw" aria-hidden="true">→</span></button>
+              <p class="formnote" style="margin-top:var(--s-4)">We reply within one working day.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Details -->
+        <div>
+          <p class="plate-code"><b>02</b> — Or reach us directly</p>
+          <dl class="dl">
+            <div><dt>Email</dt><dd><a class="tlink" data-c="email" href="#" style="text-transform:none;font-family:var(--body);letter-spacing:0">hello@example.com</a></dd></div>
+            <div><dt>Phone</dt><dd><a data-c="phone" href="#">+973 0000 0000</a></dd></div>
+            <div><dt>Based in</dt><dd data-c="location">Manama, Bahrain</dd></div>
+            <div><dt>Hours</dt><dd data-c="hours">Sun–Thu, 9:00–18:00 AST</dd></div>
+          </dl>
+
+          <p class="plate-code" style="margin-top:var(--s-7)"><b>03</b> — Helpful to include</p>
+          <ul class="slist" style="--dot:var(--cyan)">
+            <li><div><strong>Who your customer is</strong><br><span>Even roughly. Age, habit, why they walk in.</span></div></li>
+            <li><div><strong>What you've tried</strong><br><span>And what you felt didn't land.</span></div></li>
+            <li><div><strong>Where it needs to run</strong><br><span>Instagram, a window, a menu, a screen in-store.</span></div></li>
+            <li><div><strong>When</strong><br><span>A date beats "soon".</span></div></li>
+          </ul>
+
+          <div class="card" style="margin-top:var(--s-6)">
+            <p style="font-size:var(--t-sm);line-height:1.65">
+              <strong>Before you write:</strong> we don't take briefs for alcohol, tobacco,
+              drugs, or extreme-sugar food.
+              <a class="tlink" href="services.html" style="display:inline">Why <span aria-hidden="true">→</span></a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:var(--s-4)">
+          <svg class="brand__reg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/>
+            <line x1="12" y1="0" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="24"/>
+            <line x1="0" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="24" y2="12"/>
+          </svg>
+          <span data-brand>PILLAR</span>
+        </a>
+        <p class="muted" style="font-size:var(--t-sm);max-width:30ch">
+          We find the one thing your business is built on, and make everything say it.
+        </p>
+      </div>
+      <div>
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Elsewhere</h5>
+        <ul data-socials></ul>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <span>© <span data-year>2026</span> <span data-brand>PILLAR</span></span>
+      <span><a data-c="email" href="#">hello@example.com</a></span>
+      <span data-c="location">Manama, Bahrain</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
